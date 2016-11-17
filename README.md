@@ -1,6 +1,6 @@
 # FirebaseUI-auth-database
 
-FirebaseUI-auth-database is my own work that based on FirebaseUI-Android at https://github.com/firebase/FirebaseUI-Android. They both generally work same way, but FirebaseUI-auth-database has some differences from the original one.It can be useful for beginners who wants to learn Firebase.
+FirebaseUI-auth-database is my own work and it is based on FirebaseUI-Android which you can check on https://github.com/firebase/FirebaseUI-Android. They generally work the same way, but FirebaseUI-auth-database has some differences from the original one. It can be useful for beginners who wants to learn Firebase.
 
 FirebaseUI-auth-database includes;
   * Email/Password Login, 
@@ -14,7 +14,7 @@ FirebaseUI-auth-database includes;
    ![firebaseUI-ND](http://i66.tinypic.com/j909ap.png) ![firebaseUI-db](http://i65.tinypic.com/2evql9k.png)
    
    
-I tried to add Java servlets running in the Google App Engine flexible environment for FirebaseUI-auth-database as a backend service by using the example at https://cloud.google.com/solutions/mobile/mobile-firebase-app-engine-flexible. However, Despite all of my efforts, backend service didn't work properly.I send an email to Firebase support, you can see their answer in the following picture.
+I tried to add Java servlets running in the Google App Engine flexible environment for FirebaseUI-auth-database as a backend service by using the example on https://cloud.google.com/solutions/mobile/mobile-firebase-app-engine-flexible. However, Despite all of my efforts, backend service didn't work properly. I sent an email to Firebase support, you can see their reply in the following picture.
 
    ![firebaseUI-backend](http://i68.tinypic.com/2a5btxg.jpg)
 
