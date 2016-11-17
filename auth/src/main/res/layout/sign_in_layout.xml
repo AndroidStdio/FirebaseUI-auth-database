@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout style="@style/FirebaseUI.WrapperStyle">
+        <!--
+            Since the TextInputLayouts change size based on whether or not an error
+            is showing we use a relative layout to position them absolutely
+        -->
+
+        <ImageView
+            android:gravity="center"
+            android:layout_weight="1.0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo"
+            style="@style/FirebaseUI.AuthMethodPicker.Logo"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email_layout"
+            android:paddingTop="124dp"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            style="@style/FirebaseUI.Text.TextInputLayout"
+            app:hintTextAppearance="@style/FirebaseUI.Text.HintText"
+            app:errorTextAppearance="@style/FirebaseUI.Text.ErrorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                style="@style/FirebaseUI.EditText"
+                android:id="@+id/email"
+                android:hint="@string/email_hint"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password_layout"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            style="@style/FirebaseUI.Text.TextInputLayout"
+            android:paddingTop="236dp"
+            app:hintTextAppearance="@style/FirebaseUI.Text.HintText"
+            app:errorTextAppearance="@style/FirebaseUI.Text.ErrorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                style="@style/FirebaseUI.EditText"
+                android:id="@+id/password"
+                android:hint="@string/password_hint"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            style="@style/FirebaseUI.ImageView.VisibilityToggle"
+            android:id="@+id/toggle_visibility"
+            android:layout_alignEnd="@id/password_layout"
+            android:layout_alignRight="@id/password_layout"
+            android:paddingTop="254dp">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:paddingTop="348dp"
+            android:id="@+id/linearLayout2">
+            <TextView
+                android:id="@+id/trouble_signing_in"
+                android:text="@string/trouble_signing_in"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/FirebaseUI.Text.Link"
+                />
+
+            <Button
+                style="@style/FirebaseUI.Button"
+                android:text="@string/button_text_next"
+                android:id="@+id/button_done"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_holder"
+            style="@style/FirebaseUI.AuthMethodPicker.ButtonHolder"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:gravity="center"
+                android:id="@+id/email_provider"
+                style="@style/FirebaseUI.Button.AccountChooser.EmailButton"
+                android:text="@string/email_button_text"/>
+
+        </LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:id="@+id/signup_button"
+            android:layout_below="@+id/btn_holder"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>
